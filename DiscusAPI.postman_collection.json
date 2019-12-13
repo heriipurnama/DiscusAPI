@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "4ef5e72e-3065-4219-90de-96fd5ab197ee",
+		"name": "DiscusAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localAPI",
+			"item": [
+				{
+					"name": "InsertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\":\n\t{\n\t\t\"firstname\":\"herii\",\n\t\t\"lastname\":\"purnama21\",\n\t\t\"username\":\"heriipurnama\",\n\t\t\"password\":\"123!\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:4000/user/insertUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"insertUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getALLUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:4000/users?offsets=1&limits=2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "offsets",
+									"value": "1"
+								},
+								{
+									"key": "limits",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get data user by username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:4000/user/:username?offsets=0&limits=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								":username"
+							],
+							"query": [
+								{
+									"key": "offsets",
+									"value": "0"
+								},
+								{
+									"key": "limits",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "HER"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update data",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\":\n\t{\n\t\t\"firstname\":\"heriiUpdate\",\n\t\t\"lastname\":\"purnama\",\n\t\t\"username\":\"heriipurnama\",\n\t\t\"password\":\"123s!\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:4000/user/updateUser/:id",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"updateUser",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "03aa2e30-1cbe-11ea-ad16-27b5f18c7f9d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"data\":\n\t{\"idUser\":\"35489d60-1cae-11ea-9e84-15b567cadf2e\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:4000/user/deleteUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:4000/user/deleteAllUser",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"deleteAllUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExportDb",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:4000/exportDb",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"exportDb"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
