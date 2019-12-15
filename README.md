@@ -28,4 +28,4 @@ Editor : <br>
 or you can get collection https://www.getpostman.com/collections/3e87ce6f6efefa35032d
 
 ### collection API postman
-you can import collectio on your postman application file is ``` DiscusAPI.postman_collection.json ```
+ ``` DiscusAPI.postman_collection.json ```
