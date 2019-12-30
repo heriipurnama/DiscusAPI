@@ -16,14 +16,14 @@ Editor : <br>
 <br>
 
 ### Documentation API end Poin
-1. 127.0.0.1:4000/ [ check API ]
-2. 127.0.0.1:4000/users [ get data ]
-3. 127.0.0.1:4000/user/:username [ findBy username]
-4. 127.0.0.1:4000/insertUser [ insert ]
-5. 127.0.0.1:4000/updateUser/:id [ update ]
-6. 127.0.0.1:4000/delete [ delete one data ]
-7. 127.0.0.1:4000/deleteAllUser [ delete all data ]
-8. 127.0.0.1:4000/exportDb [ export db mysql on repo]
+1. [ GET ]    127.0.0.1:4000/ [ check API ]
+2. [ GET ]    127.0.0.1:4000/users [ get data ]
+3. [ GET ]    127.0.0.1:4000/user/:username [ findBy username]
+4. [ POST ]   127.0.0.1:4000/insertUser [ insert ]
+5. [ PUT ]    127.0.0.1:4000/updateUser/:id [ update ]
+6. [ DELETE ] 127.0.0.1:4000/delete [ delete one data ]
+7. [ DELETE ] 127.0.0.1:4000/deleteAllUser [ delete all data ]
+8. [ GET ]    127.0.0.1:4000/exportDb [ export db mysql on repo]
 
 or you can get collection https://www.getpostman.com/collections/3e87ce6f6efefa35032d
 
